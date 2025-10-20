@@ -1,0 +1,17 @@
+# OS/editor
+.DS_Store
+.vscode/
+
+# builds
+dist/
+build/
+
+# heavy media – do NOT commit
+*.mp4
+*.mov
+*.wav
+*.aiff
+*.psd
+*.tif
+*.zip
+*.rar

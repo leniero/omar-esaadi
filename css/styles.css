@@ -1,0 +1,747 @@
+/* General Styles */
+ @font-face {
+        font-family: 'SFproDisplay';  /* A name to reference in CSS */
+        src: url('../assets/SFproDisplay.otf'); /* Path to your local font file */
+    }
+
+body {
+       
+    font-family: 'SFproDisplay ', SFproDisplay, sans-serif;
+    margin-left: 0px;
+    padding: 0;
+    padding-top: 40px;
+    margin-top: 0;
+    /* margin-right: 40px; */
+    a {
+            text-decoration: underline;
+            /* Adds underline to all links */
+            color: black;
+            /* Ensures all links are black, adjust as necessary */
+        }
+}
+
+.center-text {
+    text-align: center;
+}
+
+img {
+    max-width: 98%;
+    height: auto;
+}
+
+.header-work{
+    margin-top: 0px;
+    margin-left: -8px;
+    font-size: 23px;
+}
+
+/* Header Styles */
+.header-container {
+display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: fixed;  /* Make header fixed when scrolling */
+  top: 0;
+  left: 0;
+  width: 100%; 
+  background-color: white;  
+  z-index: 1000; 
+  border-bottom: 1px solid black;
+  padding: 0;
+  /* margin-bottom: 10px; */
+  white-space: nowrap;
+  
+}
+
+
+  .header-left-right-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 73%;
+    text-decoration: none;
+color: black;
+    
+  }
+
+  
+/* This will hide the .contact-header-text when the window width is below 768px */
+@media (max-width: 1000px) {
+    #index-page .contact-header {
+      display: flex;
+    }
+
+      #index-page body {
+        margin-left: 0px;
+        padding: 0;
+        padding-top: 40px;
+        margin-top: 0;
+        }
+      
+  }
+
+
+  @media (max-width: 1000px) { /* Show the line only when the screen width is less than or equal to 768px */
+  
+      .header-container {
+        display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          position: flex;  
+          top: 0;
+          left: 0;
+          width: 100%; 
+          background-color: white;  
+          z-index: 1000; 
+          border-top: 0px solid black;
+          padding: 0;
+          margin-bottom: 10px;
+          white-space: nowrap;
+          
+        }
+
+        .header-line {
+            display: block; 
+            height: 1px; 
+            background-color: black; 
+            width: 100vw;
+            top: 50%; 
+            left: 0; 
+            right: 0; 
+            position: absolute;
+        }
+
+        .header-left-right-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            text-decoration: none;
+        color: black;
+            
+          }
+
+          body {
+            margin-left: 0px;
+            padding: 0;
+            padding-top: 70px;
+            margin-top: 0;
+        }
+        
+
+        }
+
+       
+   /* RESIZING HEADER PAGES */
+  @media (max-width: 1000px) {
+
+    .header-container {
+        display: grid;
+        justify-content: space-between;
+        width: 100%;
+        text-decoration: none;
+    color: black;
+    flex-direction: row;
+    flex: 1;
+    
+    }    
+
+    .header-right {
+        text-align: left;
+        padding-bottom: 0;
+        margin-left: 20px;
+        
+
+    }
+
+    #index-page .header-right {
+    display:none;
+    }
+
+    #index-page .header-line {
+      display: none;
+    }
+
+
+    .header-left {
+        width: 100%;  /* Adjust the width as needed */
+        padding-bottom: 0;
+        padding-top: 0px;
+        margin-left: 20px;
+        
+        
+    }
+
+    .header-back {
+        position: absolute;
+        right: 20px;
+        top: 0;
+
+    }
+    .header-work{
+        margin-left: 0px;
+    }
+    
+  }
+  
+
+header h1 a {
+
+text-decoration: none;
+color: black;
+}
+
+header h1 a:hover {
+
+    text-decoration: underline;
+    color: black;
+    }
+
+
+.header-left {
+    width: 75%;  
+    margin-bottom:0; 
+    padding-bottom: 0;
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.header-back {
+    margin-left: auto;
+    padding-left: 20px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .header-back a {
+    font-size: 22px;  /* Adjust this value as you prefer */
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+
+  .header-back a:hover {
+    font-size: 22px;  /* Adjust this value as you prefer */
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+  }
+
+
+.header-right {
+    width: 25%;  /* Adjust the width as needed */
+    text-align: left;
+    padding-bottom: 0;
+    padding-top: 2px;
+    align-items: left;
+  
+    
+}
+
+header h1, header h2 {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+color: black;
+}
+
+
+.header-left h1 {
+    font-size: 24px;  /* Adjust this value as you prefer */
+    text-decoration: none;
+color: black;
+
+}
+
+.header-left h2 {
+    text-decoration: none;
+color: black;
+}
+
+.header-right h1 {
+    font-size: 23px;  /* Adjust this value as you prefer */
+    padding-left: 0;
+}
+
+
+#portfolio {
+    margin-right: 12px;
+
+}
+
+.portfolio-grid {
+    width: 100%;  /* Span the entire width of the parent container */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);  /* 4 columns */
+    gap: 16px;
+}
+
+
+
+@media (min-width: 820px) {
+    .portfolio-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (min-width: 1100px) {
+    .portfolio-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+
+.portfolio-item {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    max-width: 800px;  /* Set a maximum width */
+    text-decoration: none;
+    color: inherit;  /* This will make the link color similar to the surrounding text */
+}
+
+.portfolio-item:hover {
+    text-decoration: underline;
+}
+
+.portfolio-item img {
+    width: 100%;  /* Makes the image responsive */
+    max-width: 800px;  /* Sets a maximum width */
+    height: auto;  /* Keeps the aspect ratio */
+}
+
+.portfolio-item-text {
+    position: bottom;
+    bottom: 16px;
+    left: 16px;
+    color: rgb(0, 0, 0);
+    padding: 0px;
+}
+
+
+/* Main Content Styles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.top-container {
+    /* align-items: left; */
+    display: flex;
+    padding: 0;  /* Add some padding to left and right */
+    flex: 1;  /* This makes it take up all available space in a flexbox layout */
+    flex-direction: row;
+}
+
+
+
+
+
+.top-left {
+    flex: 1; /* This makes it take up all available space in a flexbox layout*/
+    width: 75%;  /* Limit the width to 60% */
+    margin-bottom: 20px;
+    font-size: 23px;
+
+}
+
+.top-right {
+    flex: -1;  /*This makes it take up all available space in a flexbox layout */
+    width: 25%;  /* Adjust the width as needed */
+    text-align: left;
+    
+}
+
+
+  /* RESIZING PAGES */
+@media (max-width: 1000px) {
+   
+    .top-right {
+     flex-direction: column-reverse;
+     flex: -1;  /*This makes it take up all available space in a flexbox layout */
+     width: 100%;  /* Adjust the width as needed */
+     text-align: left;
+     margin-bottom: 20px;
+   
+   }
+   .top-container {
+       flex-direction: column-reverse;
+       width: 100%;
+       flex: 1;
+   }
+
+   .top-left {
+    flex: 1; /* This makes it take up all available space in a flexbox layout*/
+    width: 100%;  /* Limit the width to 60% */
+    margin-bottom: 20px;
+}
+
+#index-page .main {
+margin-top: -30px; */
+}
+
+ }
+ 
+
+/* RESIZING INDEX */
+@media (max-width: 1000px) {  /* Adjust 800px to the breakpoint you desire */
+  #index-page .top-container {
+       flex-direction: column;
+   }
+
+   #index-page .top-right {
+       flex-direction: row;
+
+   
+     }
+   }
+
+@media (min-width: 1000px) { /* Adjust the breakpoint as needed */
+    #index-page .work-education-container {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+
+
+#about {
+   
+    font-size: 23px;  /* Set the font size of the paragraph text */
+    flex: 1;  /* This makes it take up all available space in a flexbox layout */
+    width: 96%;  /* Limit the width to 60% */
+    margin-top: 0;  /* Remove top margin */
+    margin-left: 0;  /* Remove left margin */
+    padding-top: 0;  /* Remove top padding */
+    padding-left: 0;  /* Remove left padding */
+    text-align: left;  /* Align text to the left */
+    display: block;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+
+
+#about p {
+    margin: 0;  /* Removes margin */
+    padding: 0;  /* Removes padding */
+}
+
+#about a {
+    flex: auto;
+     margin: 0;
+     padding: 0;
+     text-align: top;
+     color: black;  /* Make the text black */
+     text-decoration: none;  /* Remove any underline */
+     font-size: 23px;  /* Set the font size */
+ }
+ 
+ #about a:hover {
+
+    text-decoration: underline;
+    color: black;
+    }
+
+/* Contact Section Styles */
+#contact {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    padding: 0;   
+    justify-content: space-between; /* Horizontally align items */
+}
+
+#contact h1 {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    padding: 0;
+}
+
+#contact h2 {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+ 
+}
+
+#contact p {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 0;
+    text-align: left;
+    padding: 0;
+    font-size: 23px;
+}
+
+#contact p:first-child {
+    margin-top: 0;  /* Adjust this value as needed */
+}
+
+#contact a {
+   flex: auto;
+    margin: 0;
+    padding: 0;
+    text-align: top;
+    color: black;  /* Make the text black */
+    text-decoration: none;  /* Remove any underline */
+    font-size: 23px;  /* Set the font size */
+}
+
+/* Fix the line-breaking on the email text */
+#contact a[href^='mailto:'] {
+    white-space: nowrap;
+
+}
+#contact a:hover {
+    text-decoration: underline;  /* Add underline when hovered */
+}
+
+
+.work-education-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#work, #education {
+  width: 100%; /* or whatever percentage that fits well */
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+
+.work-education-container h2 {
+    font-size: 23px;  /* Adjust this value as needed */
+    line-height: 1.2; 
+    margin-top:60px;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: pre-wrap;
+    word-break: break-word;
+
+}
+
+
+#education p {
+    font-size: 23px;  /* Adjust this value as needed */
+   /* line-height: 0.2; */
+   margin-bottom:-24px;
+}
+
+
+
+#work p {
+    font-size: 23px;  /* Adjust this value as needed */
+   margin-bottom:-24px;
+}
+
+
+/* ... PROJECT PAGE ... */
+
+.video-container {
+    position: relative;
+    width: 98%;
+    height: 0;
+    padding-bottom: 56.25%; /* Aspect ratio for 16:9 */
+    margin-bottom: 20px; /* Space between videos */
+    
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+  
+
+/* 
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 15px;
+    text-align: center;
+
+
+    z-index: 1000;
+    font-size: 14px; 
+}
+
+#cookie-banner .cookie-text .spacer {
+    display: inline-block;
+    margin-right: 10px; 
+}
+
+
+
+
+#cookie-banner button {
+    background: none;
+    border: none;
+    color: red; 
+    cursor: pointer;
+    padding: 5px; 
+    margin: -5px;
+    text-decoration: none; 
+    font-size: inherit;
+}
+
+#cookie-banner button:hover {
+    text-decoration: underline; 
+}
+
+*/
+
+
+/* DECORATIONS */
+
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1000;  /* Ensure header is on top of other elements */
+}
+
+
+.floating-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    /* z-index: 1000;   */
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* background-image: linear-gradient(45deg, red, blue); You keep this for your gradient */
+filter: blur(15px); 
+    opacity: 75%;
+}
+
+#circle1 {
+    background: radial-gradient(circle, rgb(0, 166, 255), blue);
+    animation: gradient-animation1 10s infinite;  /* Slower animation */
+    
+}
+
+#circle2 {
+    background: radial-gradient(circle, rgb(72, 255, 0), green);
+    animation: gradient-animation2 12s infinite;  /* Slower animation */
+}
+
+#circle3 {
+    background: radial-gradient(circle, rgb(255, 0, 0), rgb(110, 0, 0));
+    animation: gradient-animation3 14s infinite;  /* Slower animation */
+}
+
+#circle4 {
+    background: radial-gradient(circle, rgb(255, 255, 0), rgb(147, 0, 0));
+    animation: gradient-animation4 6s infinite;  /* Slower animation */
+}
+
+#circle5 {
+    background: radial-gradient(circle, rgb(212, 0, 255), rgb(111, 0, 63));
+    animation: gradient-animation5 8s infinite;  /* Slower animation */
+}
+
+
+
+@keyframes gradient-animation1 {
+    0% {
+      background: radial-gradient(circle, rgb(0, 255, 47), rgb(0, 100, 3));
+    }
+    100% {
+      background: radial-gradient(circle, rgb(255, 0, 230), rgb(119, 0, 127));
+    }
+}
+
+@keyframes gradient-animation2 {
+    0% {
+      background: radial-gradient(circle, rgb(0, 246, 94), rgb(0, 102, 17));
+    }
+    100% {
+      background: radial-gradient(circle, rgb(237, 37, 255),rgb(160, 0, 123))};
+    }
+
+
+@keyframes gradient-animation3 {
+    0% {
+      background: radial-gradient(circle, rgb(255, 0, 0), rgb(112, 0, 0));
+    }
+    100% {
+      background: radial-gradient(circle, rgb(31, 255, 42), rgb(0, 160, 11));
+    }
+}
+
+@keyframes gradient-animation4 {
+    0% {
+      background: radial-gradient(circle, rgb(95, 42, 255), rgb(76, 0, 130));
+    }
+    100% {
+      background: radial-gradient(circle, rgb(255, 238, 0), rgb(255, 0, 0))}
+}
+
+
+@keyframes gradient-animation5 {
+    0% {
+      background: radial-gradient(circle, rgb(37, 208, 255), rgb(34, 0, 255));
+    }
+    100% {
+      background: radial-gradient(circle, rgb(31, 233, 255), rgb(98, 0, 255));
+    }
+}
+
+
+
+/* 
+.header-left, .header-right,.header-left-right-wrapper,.header-container,.header-back, #about, #contact {
+    border: 1px solid red; 
+    background-color: rgba(0, 0, 0, 0.1); 
+}  */
+
+
+
+/* 
+.header-left, .header-right,.header-left-right-wrapper,.header-container,.header-back, #about, #contact {
+    border: 1px solid red; 
+    background-color: rgba(0, 0, 0, 0.1); 
+} 
+/* .header-left, .header-right {
+    flex-shrink: 0; 
+    flex-grow: 0;   */
+/* }
+#about, #contact {
+    flex-shrink: 0; 
+    flex-grow: 0;   
+}
+.header-left, .header-right, #about, #contact {
+    margin: 0;
+    padding: 0;
+}
+.header-left, .header-right, #about, #contact {
+    min-width: 0; 
+ }
+
+ 
+
