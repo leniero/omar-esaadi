@@ -1,28 +1,34 @@
-  Leandro Niero's Portfolio Website
+Omar Esaadi Portfolio Website
+=============================
 
-  Introduction
+Introduction
+------------
 
-This repository contains the source code for Leandro Niero's personal portfolio website, available at [www.omar-esaadi.com](http://www.omar-esaadi.com). It serves as an online showcase of Omar’s work and projects in computational arts, digital design, and software development.
+This repository contains the source code for Omar Esaadi's portfolio, hosted at [www.omar-esaadi.com](https://www.omar-esaadi.com). The site highlights Omar’s multi-hyphenate practice across fashion, arts, and cultural industries, showcasing selected projects, case studies, and collaborative initiatives.
 
-  Website Overview
+Website Overview
+----------------
 
-The website features:
-- Portfolio of Leandro’s projects and artworks.
-- Information about Leandro’s background, skills, and experience.
-- Contact information and links to social profiles.
+The website includes:
+- Project pages detailing Omar’s creative direction, cultural research, and experiential design work.
+- Background information outlining Omar’s skills, services, and professional focus.
+- Contact links and social handles for reaching Omar or exploring ongoing work.
 
-  Technologies Used
+Technologies Used
+-----------------
 
 - Frontend: HTML, CSS, JavaScript.
-- Hosting/Deployment: Hosted on GitHub Pages.
+- Hosting/Deployment: GitHub Pages (static site hosting).
 
-  Local Setup
+Local Setup
+-----------
 
-To set up the website locally:
-1. Clone the repository.
+To run the website locally:
+1. Clone this repository.
 2. Navigate to the project directory.
-3. Open `index.html` in a web browser.
+3. Open `index.html` in your preferred browser.
 
 Contact
+-------
 
-For more information or inquiries, please visit [www.leandro-niero.com](http://www.leandro-niero.com).
+For inquiries, email [oesaadi@gmail.com](mailto:oesaadi@gmail.com) or visit [www.omar-esaadi.com](https://www.omar-esaadi.com).
